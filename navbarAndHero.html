@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 3vh;
+        }
+        .component2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 10rem;
+            background-color:#1B4D3E;
+            color: wheat;
+            padding: 2rem;
+        }
+        .component2 > div:first-child{
+            display: flex;
+            align-items: flex-start;
+        }
+        .component2 > div:last-child{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+        .heroSection {
+            background-image: url('./assets/heroImage.jpeg');
+            background-color: #cccccc;
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .heroSection > h1 {
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+            position: relative;
+            top: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- navlink -->
+        <nav class="component2">
+            <div>
+                <a href="./index.html">Home</a>
+            </div>
+            <div>
+                <a>Products</a>
+                <a>Initiatives</a>
+                <a>Contact Us</a>
+            </div>
+        </nav>
+        <!-- Hero image -->
+        <section class="heroSection">
+            <h1>This is a hero Image</h1>
+        </section>
+    </div>
+</body>
+</html>

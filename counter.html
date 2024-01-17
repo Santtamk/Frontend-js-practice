@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .component {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #count{
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <a href="./index.html">Go Back Home</a>
+    <div class="component"> 
+        <button onclick="updateCount(-1)">Decrement - 1</button>
+        <h2 id="count">0</h2>
+        <button onclick="updateCount(1)">Increment + 1</button>
+    </div>
+</body>
+<script>
+
+    const updateCount = (change) => {
+        let count = document.getElementById("count");
+        let currentValue = parseInt(count.innerText)
+        count.innerText = currentValue + change
+    }
+    // const decrement = () => {
+    //     let count = document.getElementById("count")
+    //     let value = count.innerText
+    //     console.log(value)
+    //     return count.innerText= value - 1 
+    // }
+    // const increment = () => {
+    //     let count = document.getElementById("count")
+    //     let value = count.innerHTML
+    //     let addValue = parseInt(value)
+    //     let add = 1
+    //     console.log(value)
+    //     return count.innerText = addValue + 1
+    // }
+</script>
+</html>
