@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+</head>
+<style>
+    div {
+        text-align: center;
+    }
+    #quoteHere{
+        margin: 5rem;
+    }
+</style>
+<body>
+    <p><a href="./index.html">Go Back</a></p>
+    <div>
+        <h1>Random quote Generator</h1>
+        <button id="button">Generate Quote</button>
+        <h3 id="quoteHere"></h3>
+    </div>
+</body>
+<script src="./assets/data.js"></script>
+<script>
+    const button = document.getElementById('button')
+    const quoteHere = document.getElementById('quoteHere')
+
+    const generateQuote = button.addEventListener('click', quoteDisplayFunction )
+
+    function quoteDisplayFunction (){
+        const randomQuotes =   quotesArray[Math.floor(Math.random()*quotesArray.length)]
+        quoteHere.innerText = randomQuotes
+    }
+
+</script>
+</html>
